@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+    .logo {
+        display: flex;
+        width: 20%;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        }
+        .logo a {
+        text-decoration: none;
+        color: orange;
+        font-size: 30px;
+        font-weight: 400;
+        font-family: Shrikhand;
+        font-weight: 400px;
+        letter-spacing: 2px;
+        }
+        .logo_pic {
+        width: auto;
+        height: 120px;
+        margin-left: 250px;
+        }
+        .navbar {
+        display: flex;
+        animation: nav-load 300ms ease-in;
+        position: relative;
+        }
+    
+        /* Navbar animation */
+        @keyframes nav-load 
+        {
+        0%{
+            transform: translateY(-100%);
+        }  
+        100%{
+            transform: translateY(0);
+        }
+        }
+        .nav_list {
+        display: flex;
+        width: 50%;
+        /* background-color: lightblue; */
+        align-items: center;
+        padding-left: 30px;
+        margin-left: 220px;
+        }
+        .nav_list li {
+        list-style: none;
+        padding: 50px 30px;
+        }
+        .nav_list li a {
+        text-decoration: none;
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: blanchedalmond;
+        background: none;
+        padding: 10px;
+        border-radius: 10px;
+        }
+        .nav_list li a:hover {
+        background-color: #980317;
+        color: blanchedalmond;
+        animation: glow 1.5s infinite;
+        }
+        .rightNav {
+            width: 50%;
+            text-align: right;
+        }
+    
+    /* Log in button */
+    .rightNav{
+        position: relative;
+        align-items: center;
+        }
+    .rightNav a{
+        text-decoration: none;
+        color: blanchedalmond;
+    }
+    
+    .Log_in {
+        font-family: Roboto, 'Times New Roman', Times, serif;
+        color: blanchedalmond;
+        position: absolute;
+        background: none;
+        right: 70px;
+        bottom: 40px;
+        height: 50px;
+        width: 80px;
+        font-size: 20px;
+        font-weight: 700;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    
+    }
+    .Log_in:hover{
+        background-color: #980317;
+        transition: background-color 0.4s ease-out;
+        animation: glow 1500ms infinite;
+    }
+    
+    .background {
+        background: rgba(0, 0, 0, 0.01) url("/Images/bg2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+    }
+
+/* body styles */
+.container {
+    height: 1000px;
+    background: rgba(184, 184, 184, 0.4);
+}
+.item_ctn{
+    display: flex;
+    height: 170px;
+    background-color: red;
+    align-items: center;
+}
+#images{
+    padding-left: 20px;
+    height: 150px;
+    width: 150px;
+}
+.details{
+    margin-left: 20px;
+}
+/* test counter */
+span {cursor:pointer; }
+		.number{
+			margin:100px;
+		}
+		.minus, .plus{
+			width:20px;
+			height:20px;
+			background:#f2f2f2;
+			border-radius:4px;
+			padding:8px 5px 8px 5px;
+			border:1px solid #ddd;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+		}
+		input{
+			height:34px;
+      width: 100px;
+      text-align: center;
+      font-size: 26px;
+			border:1px solid #ddd;
+			border-radius:4px;
+      display: inline-block;
+      vertical-align: middle;
+ }
+ 

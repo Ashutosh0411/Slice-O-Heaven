@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Beverages</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar">
+		  <div class="logo"><img class = "logo_pic" src="logo-no-background.png" alt="Logo"></div>
+		  <ul class="nav_list">
+			<li><a href="../Html/index.html">Home</a></li>
+			<li><a href="../Html/Menu.html">Menu</a></li>
+			<li><a href="../Html/Aboutus.html">About us</a></li>
+		  </ul>
+		  <div class="rightNav">
+			<button class="Log_in"><a href="../Html/cart.html">🛒Cart</a></button>
+		  </div>
+		</nav>
+  	</header>
+	<div class="container">
+		<div class="card" id="pepsi">
+			<h2>PEPSI</h2>
+			<img src="pepsi.ebd77460b7e104a70753241ad502abca.1.jpg" alt="pepsi">
+			<br>
+			<pr>₹60</pr>
+			<p>500ml</p>
+			<button onclick="add('pepsi')" id="pepsibtn">Add to Cart</button>
+		</div>
+		<div class="card" id="7up">
+			<h2>7UP</h2>
+			<img src="7-up.15b00a4f5a8acd746ca6ae6f6e2d0330.1.jpg" alt="7up">
+			<br>
+			<pr>₹60</pr>
+			<p>500ml</p>
+			<button onclick="add('7up')" id="7upbtn">Add to Cart</button>
+		</div>
+		<div class="card" id="mirinda">
+			<h2>MIRINDA</h2>
+			<img src="mirinda.b67f0e29703e70fd5dfe91f900dc0046.1.jpg" alt="mirinda">
+			<br>
+			<pr>₹60</pr>
+			<p>500ml</p>
+			
+			<button onclick="add('mirinda')" id="mirindabtn">Add to Cart</button>
+		</div>
+		<div class="card" id="lemon">
+			<h2>MASALA LEMONADE</h2>
+			<img src="masala-lemonade.671f99d3f05e6a9bfa620046ac5168c4.1.jpg" >
+			<br>
+			<pr>₹30</pr>
+			<p>200ml<br></p>
+			<button onclick="add('lemon')" id="lemonbtn">Add to Cart</button>
+		</div>
+		<div class="card" id="mmirinda">
+			<h2>MASALA MIRINDA</h2>
+			<img src="masala-mirinda.3f89eae9de5cdc4aa6c2f91f61cd8611.1.jpg" >
+			<br>
+			<pr>₹30</pr>
+			<p>200ml</p>
+			<button onclick="add('mmirinda')" id="mmirindabtn">Add to Cart</button>
+		</div>
+		<div class="card" id="mpepsi">
+			<h2>MASALA PEPSI</h2>
+			<img src="masala-pepsi.557d0a593755b9bbd8cde2da66fd2581.1.jpg" >
+			<br>
+			<pr>₹30</pr>
+			<p>200ml 
+			</p>
+			<button onclick="add('mpepsi')" id="mpepsibtn">Add to Cart</button>
+		</div>
+	</div>
+	<script src="../Scripts/data.js"></script>
+	<script src="../Scripts/Main.js"></script>
+</body>
+</html>

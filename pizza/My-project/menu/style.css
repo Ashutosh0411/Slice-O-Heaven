@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+pr{
+    font-size: 30px;
+    left:95px;
+    bottom:60px;
+    position:relative;
+}
+/* ############################# */
+
+    /* Navbar Styles */
+        .logo {
+        display: flex;
+        width: 20%;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        }
+        .logo_pic {
+        width: auto;
+        height: 120px;
+        margin-left: 250px;
+        }
+        .navbar {
+        display: flex;
+        animation: nav-load 300ms ease-in;
+        position: relative;
+        }
+    
+        /* Navbar animation */
+        @keyframes nav-load 
+        {
+        0%{
+            transform: translateY(-100%);
+        }  
+        100%{
+            transform: translateY(0);
+        }
+        }
+        .nav_list {
+        display: flex;
+        width: 50%;
+        /* background-color: lightblue; */
+        align-items: center;
+        padding-left: 30px;
+        margin-left: 220px;
+        }
+        .nav_list li {
+        list-style: none;
+        padding: 50px 30px;
+        }
+        .nav_list li a {
+        text-decoration: none;
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: blanchedalmond;
+        background: none;
+        padding: 10px;
+        border-radius: 10px;
+        }
+        .nav_list li a:hover {
+        background-color: #980317;
+        color: blanchedalmond;
+        animation: glow 1.5s infinite;
+        }
+        .rightNav {
+            width: 50%;
+            text-align: right;
+        }
+    
+    /* Log in button */
+    .rightNav{
+        position: relative;
+        align-items: center;
+        }
+    .rightNav a{
+        text-decoration: none;
+        color: blanchedalmond;
+    }
+    
+    .Log_in {
+        font-family: Roboto, 'Times New Roman', Times, serif;
+        color: blanchedalmond;
+        position: absolute;
+        background: none;
+        right: 70px;
+        bottom: 40px;
+        height: 50px;
+        width: 80px;
+        font-size: 20px;
+        font-weight: 700;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    
+    }
+    .Log_in:hover{
+        background-color: #980317;
+        transition: background-color 0.4s ease-out;
+        animation: glow 1500ms infinite;
+    }
+
+
+
+
+
+
+
+
+/* ###################################### */
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(bg2.png);
+    color: black;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffffa5;
+    font-family: YWFT ULTRAMAGNETIC ROUGH ONE;
+    text-align: center;
+    transition: all 0.4s;
+    justify-content: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    transition: 500ms;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 27px;
+    font-weight: bold;
+    color: #000;
+}
+
+.card p {
+    margin-bottom: 10px;
+    /* margin-top: -50px; */
+    font-size: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    /* margin-left: 25px; */
+}
+
+.card button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 17px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    background-color: #ffffff;
+    /* background: none; */
+    color: black;
+    font-family: YWFT ULTRAMAGNETIC ROUGH ONE;
+
+
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: #980317 0 0 0 0;
+    }
+
+    70% {
+        box-shadow: rgba(255, 165, 0, 0) 0 0 0 10px;
+    }
+}
+@keyframes glow2 {
+    0% {
+        box-shadow: #980317 0 0 0 0;
+    }
+
+    70% {
+        box-shadow: rgba(255, 165, 0, 0) 0 0 0 10px;
+    }
+}
+
+.card button:hover {
+    background-color: #980317;
+    color: #ffffff;
+    transition: background-color 0.4s ease-out;
+    animation: glow 1500ms infinite;
+}
+
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: #1b1b1b;
+    border: 1px solid #1b1b1b;
+}
+::selection {
+    background-color: #980317;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: 0 0 5px rgba(0, 233, 253, 1.00);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #980317;
+    border-left: 2px solid#1b1b1b;
+
+}
+ /* @keyframes glowwhite{
+    0% {
+        box-shadow: #ffffff 0 0 0 0;
+    }
+
+    70% {
+        box-shadow: rgba(255, 165, 0, 0) 0 0 0 10px;
+    }
+}
+.card label{
+    background-color: #ffffff;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 30px;
+}
+.card label:hover{
+    animation: glowwhite 1500ms infinite;
+}
+
+.card input[type="radio"] {
+    opacity: 0.01;
+    z-index: 100;
+  }
+   
+  .card input[type="radio"]:checked + label {
+    background: #980317;
+    color: white;
+    border-radius: 30px;
+
+  }
+  .card input[type="radio"]:checked + label:hover {
+    animation: glow 1500ms infinite;
+  }
+  
+  .card label {
+    cursor: pointer;
+    z-index: 90;
+    line-height: 1.8em;
+  }
+  .size{
+    height: 60px;
+    width:310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  } */
+
+.mswitch,
+.fswitch,
+.pswitch,
+.xswitch,
+.dswitch,
+.cswitch
+{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 14rem;
+    padding: 0 1rem;
+    margin-left: 30px;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 30px;
+    height: 3rem;
+}
+.mswitch__label,
+.fswitch__label,
+.pswitch__label,
+.xswitch__label,
+.dswitch__label,
+.cswitch__label
+{
+    display: inline-block;
+    width: 2rem;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: color 200ms ease-out;
+}
+.mswitch__indicator,
+.fswitch__indicator,
+.pswitch__indicator,
+.xswitch__indicator,
+.dswitch__indicator,
+.cswitch__indicator
+{
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: 5px;
+    background: url(abc.png);
+    border-radius: 50%;
+    transition: transform 600ms cubic-bezier(0.02, 0.94, 0.09, 0.97), background 300ms cubic-bezier(0.17, 0.67, 0.14, 1.03);
+    transform: translate3d(1rem, 0, 0);
+}
+
+.mswitch input#msmall:checked ~ .mswitch__indicator,
+.fswitch input#fsmall:checked ~ .fswitch__indicator,
+.pswitch input#psmall:checked ~ .pswitch__indicator,
+.xswitch input#xsmall:checked ~ .xswitch__indicator,
+.dswitch input#dsmall:checked ~ .dswitch__indicator,
+.cswitch input#csmall:checked ~ .cswitch__indicator
+{
+    transform: translate3d(1.2rem, 0, 0) scale(1);
+}
+.mswitch input#mmedium:checked ~ .mswitch__indicator,
+.fswitch input#fmedium:checked ~ .fswitch__indicator,
+.pswitch input#pmedium:checked ~ .pswitch__indicator,
+.xswitch input#xmedium:checked ~ .xswitch__indicator,
+.dswitch input#dmedium:checked ~ .dswitch__indicator,
+.cswitch input#cmedium:checked ~ .cswitch__indicator
+{
+    transform: translate3d(5.5rem, 0, 0) scale(1.36);
+    left: 10px;
+}
+.mswitch input#mlarge:checked ~ .mswitch__indicator,
+.fswitch input#flarge:checked ~ .fswitch__indicator,
+.pswitch input#plarge:checked ~ .pswitch__indicator,
+.xswitch input#xlarge:checked ~ .xswitch__indicator,
+.dswitch input#dlarge:checked ~ .dswitch__indicator,
+.cswitch input#clarge:checked ~ .cswitch__indicator
+{
+    transform: translate3d(10.6rem, 0, 0)scale(1.6);
+    left:20px;
+}
+
+
+.mswitch input[type="radio"]:not(:checked), .mswitch input[type="radio"]:checked,
+.fswitch input[type="radio"]:not(:checked), .fswitch input[type="radio"]:checked,
+.pswitch input[type="radio"]:not(:checked), .pswitch input[type="radio"]:checked,
+.xswitch input[type="radio"]:not(:checked), .xswitch input[type="radio"]:checked,
+.dswitch input[type="radio"]:not(:checked), .dswitch input[type="radio"]:checked,
+.cswitch input[type="radio"]:not(:checked), .cswitch input[type="radio"]:checked
+{
+    display: none;
+}
+
+/* ################################### */
+/* .fswitch {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 14rem;
+    padding: 0 1rem;
+    margin-left: 30px;
+    align-items: center;
+} */
+/* .fswitch:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 3rem;
+    background: #fff;
+    border-radius: 30px;
+} */
+/* .fswitch__label {
+    display: inline-block;
+    width: 2rem;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: color 200ms ease-out;
+} */
+/* .fswitch__indicator {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: 5px;
+    background: url(abc.png);
+    border-radius: 50%;
+    transition: transform 600ms cubic-bezier(0.02, 0.94, 0.09, 0.97), background 300ms cubic-bezier(0.17, 0.67, 0.14, 1.03);
+    transform: translate3d(1rem, 0, 0);
+} */
+
+/* .fswitch input#fsmall:checked ~ .fswitch__indicator {
+    transform: translate3d(1.2rem, 0, 0) scale(1.1);
+} */
+/* .fswitch input#fmedium:checked ~ .fswitch__indicator {
+    transform: translate3d(5.5rem, 0, 0) scale(1.37);
+    left: 10px;
+}
+.fswitch input#flarge:checked ~ .fswitch__indicator {
+    transform: translate3d(10.6rem, 0, 0)scale(1.6);
+    left:20px;
+} */
+
+
+/* .fswitch input[type="radio"]:not(:checked), .fswitch input[type="radio"]:checked {
+    display: none;
+} */
