@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="..\Images\logo2.png">
+    <link rel="stylesheet" href="../Css/Home_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <!-- <link href="//db.onlinewebfonts.com/c/02a5ea70ac1e00eb2339391312f5992b?family=YWFT+Ultramagnetic+Rough+One" rel="stylesheet" type="text/css"/> -->
+    <title>Home</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ND7HG8RR8C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ND7HG8RR8C');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CSM7XE8Q2D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CSM7XE8Q2D');
+</script>
+
+  <body class="background" style="background:url(../Images/bg3.png);background-size: cover;background-repeat: no-repeat;background-position: center center;background-attachment: fixed;">
+    <header>
+      <nav class="navbar">
+        <div class="logo"><img class = "logo_pic" src="../Images/logo-no-background.png" alt="Logo"></div>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="nav_list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+        </ul>
+        <div class="rightNav">
+          <button class="Log_in"><a href="cart.html">🛒Cart</a></button>
+        </div>
+      </nav>
+    </header>
+    <!-- Content -->
+    <div class="container">
+      <div class="header"><span>THE PIZZA</span> <br>YOU LOVE!</div>
+      <div class="para">Our menu is for everyone. Get the most delicious pizza in town delivered right to your door-step.
+      </div>
+    </div>
+    <div class="btn_ctn">
+      <div id="order_div"><a href="Menu.html"><button class="order">Order now</button></a></div>
+      <div  id="menu_div">
+          <a href="Menu.html"><button class="Menu_btn"> See the menu &#10132;</button></a></div>
+    </div>
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const navList = document.querySelector('.nav_list');
+      
+      hamburger.addEventListener('click', () => {
+        navList.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>
+<!doctype html>
