@@ -20,7 +20,13 @@
 <body>
 	<header>
 		<nav class="navbar">
-		  <div class="logo"><img class = "logo_pic" src="../png/logo-no-background.png" alt="Logo"></div>
+		  <div class="logo"><img class = "logo_pic" src="../Images/logo-no-background.png" alt="Logo"></div>
+		  <!-- Add hamburger button -->
+		  <div class="hamburger">
+			<div></div>
+			<div></div>
+			<div></div>
+		  </div>
 		  <ul class="nav_list">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="Menu.html">Menu</a></li>
@@ -42,7 +48,7 @@
 		<div class="card">
 			<h2>Non Veg</h2>
 			<img src="../menu/Pepper_Barbeque_&_Onion.jpg" alt="7up">
-			<p>Indulge in our non-veg pizza, featuring juicy meats and melted cheese on a crispy crust. A perfect choice for meat lovers craving for a flavorful and satisfying meal.</p>
+			<p>Indulge in our non-veg pizza, featuring juicy meats and melted cheese on a crispy crust. A perfect choice for meat lovers craving for a flavorful meal.</p>
 			<a href="../menu/Non-veg.html">
         <button>View More</button></a>
 		</div>
@@ -54,6 +60,18 @@
 			<button>View More</button></a>
 		</div>
 	</div>
+	<!-- Add JavaScript before closing body tag -->
+	<script>
+		const hamburger = document.querySelector('.hamburger');
+		const navList = document.querySelector('.nav_list');
+		
+		hamburger.addEventListener('click', () => {
+			hamburger.classList.toggle('active');
+			navList.classList.toggle('active');
+			// Prevent body scrolling when menu is open
+			document.body.style.overflow = navList.classList.contains('active') ? 'hidden' : 'auto';
+		});
+	</script>
 </body>
 
 </html>

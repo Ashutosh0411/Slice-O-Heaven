@@ -5,7 +5,9 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About US</title>
     <link rel="icon" type="image/x-icon" href="..\Images\logo2.png">
-    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" type="text/css" href="..\Css\style2.css">
+    <link rel="stylesheet" href="../menu/style.css">
+    <!-- Add menu styles -->
   </head>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND7HG8RR8C"></script>
@@ -19,7 +21,13 @@
   <body>
     <header>
       <nav class="navbar">
-        <div class="logo"><img class = "logo_pic" src="../png/logo-no-background.png" alt="Logo"></div>
+        <div class="logo"><img class = "logo_pic" src="../Images/logo-no-background.png" alt="Logo"></div>
+        <!-- Add hamburger button -->
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <ul class="nav_list">
           <li><a href="index.html">Home</a></li>
           <li><a href="Menu.html">Menu</a></li>
@@ -38,6 +46,17 @@
       <p>At Slice O Heaven, we pride ourselves on our commitment to the community. We participate in local events and fundraisers, and we also donate a portion of our profits to local charities.</p>
       <p>Thank you for choosing Slice O Heaven Pizza. We appreciate your business and look forward to serving you!</p>
     </main>
-  
+    <!-- Add JavaScript before closing body tag -->
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const navList = document.querySelector('.nav_list');
+      
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navList.classList.toggle('active');
+        // Prevent body scrolling when menu is open
+        document.body.style.overflow = navList.classList.contains('active') ? 'hidden' : 'auto';
+      });
+    </script>
   </body>
 </html>

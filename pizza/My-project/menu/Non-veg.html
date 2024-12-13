@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Non-veg</title>
 	<link rel="icon" type="image/x-icon" href="..\Images\logo2.png">
-	<link rel="stylesheet" href="style2.css">
+	<link rel="stylesheet" href="style.css">
 	<style>
 		
 	</style>
@@ -23,7 +23,13 @@
 <body>
 	<header>
 		<nav class="navbar">
-		  <div class="logo"><img class = "logo_pic" src="logo-no-background.png" alt="Logo"></div>
+		  <div class="logo"><img class = "logo_pic" src="../Images/logo-no-background.png" alt="Logo"></div>
+		  <!-- Add hamburger button -->
+		  <div class="hamburger">
+			  <div></div>
+			  <div></div>
+			  <div></div>
+		  </div>
 		  <ul class="nav_list">
 			<li><a href="../Html/index.html">Home</a></li>
 			<li><a href="../Html/Menu.html">Menu</a></li>
@@ -146,6 +152,16 @@
 	</div>
 	<script src="../Scripts/data.js"></script>
 	<script src="../Scripts/Main.js"></script>
+	<script>
+		const hamburger = document.querySelector('.hamburger');
+		const navList = document.querySelector('.nav_list');
+		
+		hamburger.addEventListener('click', () => {
+			hamburger.classList.toggle('active');
+			navList.classList.toggle('active');
+			document.body.style.overflow = navList.classList.contains('active') ? 'hidden' : 'auto';
+		});
+	</script>
 </body>
 
 </html>

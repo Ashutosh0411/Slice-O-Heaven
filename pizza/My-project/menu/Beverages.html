@@ -20,7 +20,12 @@
 <body>
 	<header>
 		<nav class="navbar">
-		  <div class="logo"><img class = "logo_pic" src="logo-no-background.png" alt="Logo"></div>
+		  <div class="logo"><img class = "logo_pic" src="../Images/logo-no-background.png" alt="Logo"></div>
+		  <div class="hamburger">
+			<div></div>
+			<div></div>
+			<div></div>
+		  </div>
 		  <ul class="nav_list">
 			<li><a href="../Html/index.html">Home</a></li>
 			<li><a href="../Html/Menu.html">Menu</a></li>
@@ -85,5 +90,15 @@
 	</div>
 	<script src="../Scripts/data.js"></script>
 	<script src="../Scripts/Main.js"></script>
+	<script>
+		const hamburger = document.querySelector('.hamburger');
+		const navList = document.querySelector('.nav_list');
+		
+		hamburger.addEventListener('click', () => {
+			hamburger.classList.toggle('active');
+			navList.classList.toggle('active');
+			document.body.style.overflow = navList.classList.contains('active') ? 'hidden' : 'auto';
+		});
+	</script>
 </body>
 </html>

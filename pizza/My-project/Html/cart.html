@@ -22,6 +22,12 @@
 <body>
   <nav class="navbar">
     <div class="logo"><img class = "logo_pic" src="../Images/logo-no-background.png" alt="Logo"></div>
+    <!-- Add hamburger menu -->
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
     <ul class="nav_list">
       <li><a href="index.html">Home</a></li>
       <li><a href="Menu.html">Menu</a></li>
@@ -32,12 +38,23 @@
     </div>
   </nav>
 
-  
-
   <div class="shopping-cart" id="shopping-cart"></div>
   <div id="label" class="text-center"></div>
-</body>
-<script src="../Scripts/data.js"></script>
-<script src="../Scripts/cart.js"></script>
 
+  <!-- Add JavaScript before closing body tag -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navList = document.querySelector('.nav_list');
+    
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navList.classList.toggle('active');
+      // Prevent body scrolling when menu is open
+      document.body.style.overflow = navList.classList.contains('active') ? 'hidden' : 'auto';
+    });
+  </script>
+  <script src="../Scripts/data.js"></script>
+  <script src="../Scripts/cart.js"></script>
+
+</body>
 </html>
